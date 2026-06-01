@@ -155,3 +155,166 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+:root {
+  --page-black: #030712;
+  --panel-black: #07111f;
+  --panel-blue: #0b1f3a;
+  --line-blue: #164b7f;
+  --title-blue: #8fd3ff;
+  --text-blue: #b7dcff;
+  --muted-blue: #7faed8;
+  --link-blue: #38bdf8;
+  --link-blue-hover: #7dd3fc;
+}
+
+html {
+  background: var(--page-black) !important;
+}
+
+body {
+  background: var(--page-black) !important;
+  color: var(--text-blue) !important;
+}
+
+.navbar,
+.navbar-menu,
+.navbar-start,
+.section,
+.hero,
+.footer {
+  background: var(--page-black) !important;
+}
+
+.navbar-item,
+.navbar-item .icon {
+  color: var(--title-blue);
+}
+
+.navbar-item:hover,
+.navbar-item:focus {
+  background: var(--panel-black);
+  color: var(--link-blue-hover);
+}
+
+.navbar-burger {
+  color: var(--title-blue);
+}
+
+.title,
+.subtitle,
+.publication-title,
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: var(--title-blue) !important;
+}
+
+.publication-authors,
+.publication-authors span,
+.content,
+.content p,
+.content li,
+.content ul,
+.content ol,
+.content blockquote,
+.content table,
+.content td,
+.content th,
+.footer,
+.footer p,
+.teaser .subtitle {
+  color: var(--text-blue) !important;
+}
+
+.publication-authors:nth-of-type(2),
+.publication-venue,
+.content strong,
+.content b {
+  color: var(--muted-blue) !important;
+}
+
+a,
+.publication-authors a {
+  color: var(--link-blue) !important;
+}
+
+a:hover,
+a:focus,
+.publication-authors a:hover {
+  color: var(--link-blue-hover) !important;
+}
+
+.button.is-dark,
+.external-link.button {
+  background: #06182c;
+  border: 1px solid var(--line-blue);
+  color: var(--title-blue);
+}
+
+.button.is-dark:hover,
+.button.is-dark:focus,
+.external-link.button:hover,
+.external-link.button:focus {
+  background: #0b2b4d;
+  border-color: var(--link-blue);
+  color: #d7efff;
+}
+
+.footer .icon-link {
+  color: var(--link-blue);
+}
+
+.footer .icon-link:hover,
+.footer .icon-link:focus {
+  color: var(--link-blue-hover);
+}
+
+.is-light,
+.section.is-light {
+  background: var(--panel-black) !important;
+}
+
+pre,
+code {
+  background: var(--panel-blue) !important;
+  color: #c8e7ff !important;
+}
+
+pre {
+  border: 1px solid var(--line-blue);
+  border-radius: 8px;
+}
+
+blockquote,
+.box,
+.card,
+.message,
+table,
+thead,
+tbody,
+tr,
+td,
+th {
+  background: var(--panel-black) !important;
+  border-color: var(--line-blue) !important;
+}
+
+.interpolation-panel {
+  background: var(--panel-black);
+  border: 1px solid var(--line-blue);
+}
+
+.results-carousel .item,
+img,
+video {
+  border-color: var(--line-blue);
+}
+
+::selection {
+  background: var(--line-blue);
+  color: #e0f2fe;
+}
